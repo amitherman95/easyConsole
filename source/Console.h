@@ -29,7 +29,7 @@ public:
 		virtual HWND getConsoleHandle();
 		virtual const std::string getTitle();
 		virtual void setTitle(const string& title);
-		std::wostream Cout;/// The intention is to write to the console by: Console.Cout <<  "...";
+		std::ostream Cout;/// The intention is to write to the console by: Console.Cout <<  "...";
 		
 private:
 	CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
